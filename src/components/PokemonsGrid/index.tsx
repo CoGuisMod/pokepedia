@@ -71,7 +71,7 @@ function PokemonsGrid() {
 
       <div className="grid grid-cols-2 md:grid-cols-5 gap-2 w-full">
         {pokemonData
-          ? pokemonData.results.map((pokemon: any, index: number) => (
+          ? pokemonData.results?.map((pokemon: any, index: number) => (
               <PokemonCard key={index} pokemon={pokemon} />
             ))
           : "Loading..."}
