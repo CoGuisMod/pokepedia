@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import PokemonCard from "../PokemonCard";
 
 function PokemonsGrid() {
-  const [pokemonData, setPokemonData] = useState(null);
+  const [pokemonData, setPokemonData] = useState<any>({});
 
   const [currentLink, setCurrentLink] = useState(
     "https://pokeapi.co/api/v2/pokemon/"

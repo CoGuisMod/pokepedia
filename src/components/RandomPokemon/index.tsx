@@ -5,7 +5,7 @@ import PokemonTypeTag from "../PokemonTypeTag";
 import { FaSync } from "react-icons/fa";
 
 const RandomPokemon = () => {
-  const [randomPokemon, setRandomPokemon] = useState(null);
+  const [randomPokemon, setRandomPokemon] = useState<any>({});
   const [generateNewPokemon, setGenerateNewPokemon] = useState(false);
 
   const getRandomPokemon = async () => {
