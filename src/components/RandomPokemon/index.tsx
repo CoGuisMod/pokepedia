@@ -45,7 +45,7 @@ const RandomPokemon = () => {
         <p className="font-bold text-2xl text-center">{randomPokemon?.name}</p>
         <div className="py-1" />
         <div className="grid grid-flow-col gap-2 justify-center">
-          {randomPokemon?.types.map((type: any, index: number) => (
+          {randomPokemon?.types?.map((type: any, index: number) => (
             <PokemonTypeTag key={index} type={type} />
           ))}
         </div>
