@@ -36,7 +36,7 @@ const RandomPokemon = () => {
       </button>
 
       <img
-        src={randomPokemon?.sprites.front_default}
+        src={randomPokemon?.sprites?.front_default}
         alt={`${randomPokemon?.name} front image`}
         className="w-full"
       />
