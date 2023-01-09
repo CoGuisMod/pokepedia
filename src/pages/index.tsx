@@ -28,7 +28,7 @@ export default function Home() {
         {/* Navbar */}
         <Navbar />
 
-        <section className="flex gap-4 px-4 pt-4">
+        <section className="flex flex-col sm:flex-row gap-4 gap-y-24 p-4">
           <RandomPokemon />
 
           <PokemonsGrid />

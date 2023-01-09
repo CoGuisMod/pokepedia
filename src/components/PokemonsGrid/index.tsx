@@ -41,10 +41,8 @@ function PokemonsGrid() {
     getPokemons();
   }, [currentLink]);
 
-  console.log(pokemonData);
-
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-center items-center gap-2 text-slate-900">
         <button
           onClick={() => changePokemons("previous")}
@@ -69,7 +67,7 @@ function PokemonsGrid() {
 
       <div className="py-2" />
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-2 w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2 w-full">
         {pokemonData
           ? pokemonData?.results?.map((pokemon: any, index: number) => (
               <PokemonCard key={index} pokemon={pokemon} />
